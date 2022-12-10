@@ -1,17 +1,18 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
- * More header goes here
+ * main - Entry Point
  * Description - A program that prints the alphabeth in lower case
  * Return: Always 0 (Success)
+ * Return 0
  */
 int main(void)
 {
 	char c = 'a';
 
-	while (c <= 'z');
+	while (c <= 'z')
 	{
-		if (c != 'e' && c != 'q');
+		if (c != 'e' && c != 'q')
 		{
 			putchar(c);
 		}
