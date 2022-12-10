@@ -8,9 +8,13 @@
  */
 int main(void)
 {
-	int nums = 0;
+	char nums;
 
-	while (nums <= 16)
+	for (nums = '0'; nums <= '9'; nums++)
+	{
+		putchar(nums);
+	}
+	for (nums = 'a'; nums <= 'f'; nums++)
 	{
 		putchar(nums);
 	}
