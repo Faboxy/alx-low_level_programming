@@ -2,7 +2,8 @@
 #include <stdlib.h>
 /**
  * main - Entry Point
- * Description - A program that prints all single base 10 numbers starting from 0
+ * Description - A program that prints all single base 10 numbers
+ * Starting from 0
  * Return: Always 0 (Success)
  */
 int main(void)
