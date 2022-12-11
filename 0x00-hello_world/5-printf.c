@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <time.h>
-#include <stdlib.h>i
+#include <stdlib.h>
 /**
  * main - Entry Point
  * Description - A program that prints exactly
@@ -8,7 +8,7 @@
  */
 int main(void)
 {
-	printf("with proper grammar, but the outcome is a piece of art");
+	printf("with proper grammar, but the outcome is a piece of art\n");
 	return (0);
 
 }
