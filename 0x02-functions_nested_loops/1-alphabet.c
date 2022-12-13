@@ -1,14 +1,14 @@
 #include "main.h"
 /**
  * mian - Entry point
- * A program that writes all the alphabets in lowercase a-z
+ * print alphabet - A program that writes all the alphabet in lowercase a-z
  */
 void print_alphabet(void);
 }
-	char x;
+	char letter;
 
-	for (x = 'a'; x <= 'z'; x++)
-		_putchar(x);
+	for (letter = 'a'; letter <= 'z'; letter++)
+		_putchar(letter);
 
 	_putchar('\n');
 }
