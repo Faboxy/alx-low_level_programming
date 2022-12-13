@@ -1,8 +1,8 @@
 #include "main.h"
 /**
- * mian - Entry point
- * print alphabet - A program that writes all the alphabet in lowercase a-z
+ * print alphabet - print all alphabet in lowercase
  */
+
 void print_alphabet(void);
 }
 	char letter;
