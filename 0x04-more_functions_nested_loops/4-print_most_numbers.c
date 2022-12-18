@@ -8,15 +8,15 @@
 
 void print_most_numbers(void)
 {
-int i;
+int number;
 
-for (i = 0; i < 9; i++)
+for (number = 48; number < 58; number++)
 {
-if ((i == 2 || (i == 4))
+if ((number == 48 || (number == 52))
 {
-continue:
+continue;
 }
-_putchar (i);
+_putchar(number);
 }
-_putchar ('\n');
+_putchar (10);
 }
