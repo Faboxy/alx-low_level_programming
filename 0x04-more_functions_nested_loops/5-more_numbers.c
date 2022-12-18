@@ -1,9 +1,9 @@
 #include "main.h"
 
 /**
-* more_number - prints 0 to 14 ten times
-*
-* Return: 0
+* more_number - Entry point
+* Description: prints numbers 0 to 14 ten times
+* Return: void
 */
 
 void more_numbers(void)
