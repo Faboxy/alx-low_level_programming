@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
-* more_number - Entry point
+* more_numbers - Entry point
 * Description: prints numbers 0 to 14 ten times
 * Return: void
 */
