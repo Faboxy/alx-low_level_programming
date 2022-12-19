@@ -8,15 +8,17 @@
 
 void more_numbers(void)
 {
-int i, j;
+int i, tens, units, row;
 
-for (i = 0; i < 10; i++)
+for (row = 1; row <= 10; row++)
 {
-for (j = 0; j < 15; j++)
+for (i = 0; i < 15; i++)
 {
-if (j >= 10)
-_putchar(j / 10 + '0');
-_putchar(j % 10 = '0');
+tens = i / 10;
+units = i % 10;
+if (i > 9)
+_putchar(tens + '0');
+_putchar(units + '0');
 }
 _putchar('\n');
 }
