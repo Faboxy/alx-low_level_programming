@@ -13,7 +13,7 @@ int row, column;
 
 if (size <= 0)
 {
-_putchar('\n'};
+_putchar('\n');
 }
 else
 {
@@ -24,7 +24,6 @@ for (column = 1; column <= size; column++)
 _putchar('#');
 }
 _putchar('\n');
-}
 }
 }
 }
