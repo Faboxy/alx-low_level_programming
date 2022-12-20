@@ -6,10 +6,10 @@
 * @n: checked
 * Return: 0
 */
-void reset_to_98(int *n);
+void reset_to_98(int *n)
 {
-	int *ptr;
+int *ptr;
 
-	ptr = n;
-	*ptr = 98;
+ptr = n;
+*ptr = 98;
 }
