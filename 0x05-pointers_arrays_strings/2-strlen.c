@@ -3,7 +3,7 @@
 /**
 * _strlen - Entry point
 * Description: prints the lenght of a string
-* @s -checked
+* @s: checked
 * Return: i
 */
 
