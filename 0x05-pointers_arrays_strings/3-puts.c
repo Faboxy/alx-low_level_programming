@@ -8,7 +8,9 @@
 
 void _puts(char *str)
 {
-if (str)
+char *str
+
+if (*str)
 {
 while (*str)
 {
