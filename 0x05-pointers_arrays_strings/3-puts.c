@@ -8,13 +8,6 @@
 
 void _puts(char *str)
 {
+_putchar("%s\n", str);
+}
 
-if (str)
-{
-while (*str)
-{
-_putchar(*str++);
-}
-}
-_putchar('\n');
-}
