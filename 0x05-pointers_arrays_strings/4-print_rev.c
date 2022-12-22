@@ -13,7 +13,7 @@ size_t len = strlen(s);
 
 for (size_t i = len; i > 0; i--)
 {
-putchar(s[i-1]);
+putchar(s[i - 1]);
 }
 putchar('\n');
 }
