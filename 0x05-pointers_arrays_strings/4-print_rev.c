@@ -1,5 +1,6 @@
 #include "main.h"
-
+#include <stdio.h>
+#include <string.h>
 /**
 * print_rev - prints a string in treverse
 * @s: checked
@@ -8,18 +9,11 @@
 
 void print_rev(char *s)
 {
-int i, len;
+size_t len = strlen(str);
 
-i = 0;
-len = 0;
-
-while (s[len] != '\0')
+for (size_t i = len; i > 0; i--)
 {
-len++;
+putchar(str[i-1]);
 }
-for (i = len - 1; i >= 0; i--)
-{
-_putchar(*(s + 1));
-}
-_putchar('\n');
+putchar('\n');
 }
