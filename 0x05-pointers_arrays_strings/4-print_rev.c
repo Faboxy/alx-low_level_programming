@@ -9,7 +9,8 @@
 
 void print_rev(char *s)
 {
-size_t len = slen(s);
+size_t;
+len = 0;
 
 for (size_t i = len; i > 0; i--)
 {
