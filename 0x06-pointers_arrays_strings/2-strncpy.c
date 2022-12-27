@@ -7,7 +7,7 @@
 * the remainder of the destination string is filled with null byte
 * works identically to the standard library function strncpy
 * @dest: buffer storing the string copy
-* @srcd: source string
+* @src: source string
 * @n: max number of byte copied
 * Return: void
 */
