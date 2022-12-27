@@ -30,4 +30,3 @@ str[index] -= 32;
 }
 return (str);
 }
-
