@@ -9,15 +9,22 @@
 *
 * Return: dest
 */
-char *_strncat(char *dest, char *src, int n)
+char *_strncat(char *dest, char *src, int n) 
 {
-int dest = 0, dest_lens = 0;
+int i, j;
 
-while (dest[index++])
-dest_lens++;
-
-for (index = 0; src[index] && index < n; index++)
-dest[dest_lens++] = src[index];
-
+i = 0;
+while (dest[i] != '\0')
+{
+i++;
+}
+j = 0;
+while (j < n && src[j] != '\0')
+{
+dest[i] = dest[j];
+i++;
+j++;
+}
+dest[i] = '\0';
 return (dest);
 }
