@@ -29,6 +29,7 @@ diff = s1[i] - s2[i];
 break;
 }
 else
-i++
+i++;
 }
-
+return (diff);
+}
