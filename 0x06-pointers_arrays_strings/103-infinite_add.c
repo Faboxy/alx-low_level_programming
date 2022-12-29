@@ -1,46 +1,49 @@
 #include "main.h"
-
 /**
-* infinite_add - A function that adds two numbers
-* @n1: first number to be added
-* @n2: second number to be added
-* @r: stores the result
-* @size_r: size of buffer
-* Return: returns pointer to result
+* infinite_add - adds two numbers
+* @n1: the first number
+* @n2: the second number
+* @r: the buffer to store the result
+* @size_r: the buffer size
+*
+* Return: pointer to the result if buffor is not overflowed, else 0
 */
-char *infinite_add(char *n1, char *n2, char *r, int size_r)
-{
-}
-/**
- * add_strings - adds the numbers stored in two strings
- * @n1: the string containing the first number
- * @n2: the second string of number to be added to the first
- * @r: the buffer to stotre the result of the number
- * @r_index: the current index of the bugffer
- * Return: if r can store the sum - a pointer to the result
- * if r cannot store the sum - 0
- */
-char add_strings(char *n1, char *n2, char *r, int r_index)
-{
-int num, tens = 0;
 
-for (; *n1 && *n2; n1--, n2--, r_index--)
+char	*infinite_add(char *n1, char *n2, char *r, int size_r)
 {
-num = (*n1 - '0') + (*n2 - '0');
-num += tens;
-*(r + r_index) = (num % 10) + '0';
-tens = num / 10;
-}
-for (; *n1; n1--; r_index++)
+int l1 = _strlen(n1), l2 = _strlen(n2);
+int ret = 0, j = 0, k = 0, tmp, a, b;
+
+if (l1 >= size_r || l2 >= size_r)
+return (0);
+
+while (k < l1 || k < l2)
 {
-num = *(n1 - '0') + tens;
-*(r + r_index) = (num % 10) + '0';
-tens = num / 10;
+if (k >= l1)
+a = 0;
+else
+a = n1[l1 - k - 1] - '0';
+
+if (k >= l2)
+b = 0;
+else
+b = n2[l2 - k - 1] - '0';
+
+tmp = a + b + ret;
+ret = (tmp >= 10) ? 1 : 0;
+r[k++] = (tmp % 10) + '0';
 }
-for (; *n2; n2--; r_index--)
+
+if (ret == 1)
 {
-num = (*n2 - '0') + tens;
-*(r + r_index) = (num % 10) + '0';
-tens = num / 10;
+if (k < size_r - 1)
+r[k++] = '1';
+else
+return (0);
 }
+j = k;
+while (j <= size_r)
+r[j++] = '\0';
+rev_n_string(r, k);
+return (r);
 }
