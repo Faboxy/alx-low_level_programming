@@ -2,27 +2,29 @@
 #include <stdlib.h>
 #include <time.h>
 
-#define PASSWORD_LENGTH 8
 /**
-* main - generate password
-* Return: nothing
-*/
+ * main - entry point for our keygen
+ * Return: 0
+ */
 
-int main(void)
+int	main(void)
 {
-srand(time(0));
+	char password[60] = "\0";
+	char hash[63] = "0123456789abcdefghijklmnopqrstuvwxy
+				zABCDEFGHIJKLMNOPQRSTUVWXYZ";
+	int sum = 0, i = 0, tmp = 0;
 
-char password[PASSWORD_LENGTH + 1];
+	srand(time(NULL));
+	while (sum < 2772 - 'z')
+	{
+		tmp = rand() % 62;
+		sum += hash[tmp];
+		password[i++] = hash[tmp];
+	}
 
-for (int i = 0; i < PASSWORD_LENGTH; i++)
-password[i] = rand() % ('z' - 'a' + 1) + 'a';
-if (rand() % 2 == 0)
-{
-password[i] = rand() % 10 + '0';
-}
-}
-password[PASSWORD_LENGTH] = '\0';
+	password[i] = (2772 - sum);
+	password[i + 1] = '\0';
 
-printf("Generated password: %s\n", password);
-return 0;
+	printf("%s", password);
+	return (0);
 }
