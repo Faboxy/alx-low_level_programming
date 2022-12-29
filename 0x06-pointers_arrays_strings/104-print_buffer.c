@@ -1,5 +1,5 @@
 #include "main.h"
-
+#include <stdio.h>
 /**
 * print_buffer - function that prints a buffer
 * prints 10 bytes per line
