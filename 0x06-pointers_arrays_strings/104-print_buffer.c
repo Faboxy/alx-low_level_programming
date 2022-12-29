@@ -1,49 +1,59 @@
 #include <stdio.h>
-/**
-* print_buffer - function that prints a buffer
-* prints 10 bytes per line
-* starts with the position of the first byte in hexadecimal (8 chars).
-* starting with '0
-* each line shows the hexadecimal content
-* prints the byte if it is printable
-* each line ends with a new line '\n''
-* if the inputted byte size is 0 or less, the function only prints a new line
-* @b: number of bytes
-* @size: size of the byte
-*/
-void print_buffer(char *b, int size)
-{
-int i = 0, j;
 
-if (size < 0)
+/**
+* print_line - prints a buffer line
+* @b: the pointed buffer
+* @c: the current position in buffer
+* @size: the max size of the content to print
+*/
+
+void	print_line(char *b, int c, int size)
 {
-prinytf('\n');
-return;
+int i = 0;
+
+printf("%08x: ", c);
+while (i < 10)
+{
+if (i + c >= size)
+printf("  ");
+else
+printf("%02x", b[i + c]);
+if (i % 2 != 0)
+printf(" ");
+i++;
 }
+
+i = 0;
+while (i < 10)
+{
+if (i + c < size)
+{
+if ((b[i + c] < 32 || b[i + c] > 126))
+printf(".");
+else
+printf("%c", b[i + c]);
+}
+i++;
+}
+printf("\n");
+}
+
+/**
+ * print_buffer - prints a buffer
+ * @b: the pointed buffer
+ * @size: the size of the content to print
+ */
+
+void	print_buffer(char *b, int size)
+{
+int i = 0;
+
+if (size <= 0)
+printf("\n");
+else
 while (i < size)
 {
-if (i % 10 == 0)
-printf("%08x: ", i);
-for (j = i; j < i + 9; j += 2)
-{
-if ((j < size) && ((j + 1) < size))
-printf("%02x%02x: ", b[j], b[j + 1]);
-else
-{
-while (++j <= i + 10)
-{
-printf(" ");
-printf(" ");
-}
-for (j = i; j < i + 9 && j < size; j++)
-{
-if (b[j] >= 32 && b[j] <= 126)
-printf("%c", b[j]);
-else
-printf(",");
-]
-printf('\n');
+print_line(b, i, size);
 i += 10;
-}
 }
 }
