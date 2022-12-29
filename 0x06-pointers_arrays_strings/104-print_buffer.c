@@ -1,4 +1,3 @@
-#include "main.h"
 #include <stdio.h>
 /**
 * print_buffer - function that prints a buffer
@@ -32,9 +31,9 @@ printf("%02x%02x: ", b[j], b[j + 1]);
 else
 {
 while (++j <= i + 10)
+{
 printf(" ");
 printf(" ");
-}
 }
 for (j = i; j < i + 9 && j < size; j++)
 {
@@ -45,5 +44,6 @@ printf(",");
 ]
 printf('\n');
 i += 10;
+}
 }
 }
