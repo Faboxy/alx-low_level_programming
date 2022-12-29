@@ -10,8 +10,7 @@
 int	main(void)
 {
 	char password[60] = "\0";
-	char hash[63] = "0123456789abcdefghijklmnopqrstuvwxy
-				zABCDEFGHIJKLMNOPQRSTUVWXYZ";
+	char hash[63] = "0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
 	int sum = 0, i = 0, tmp = 0;
 
 	srand(time(NULL));
