@@ -1,20 +1,18 @@
-#include "main.h"
-#include <stdio.h>
+#include "holberton.h"
 
 /**
-* print_rev - prints a string in treverse
-* @s: checked
-* Return: nothing
+* print_rev - prints a string, in reverse, followed by a newline, to sdtout
+* @s: the string to be printed
 */
 
-void print_rev(char *s)
+void	print_rev(char *s)
 {
-size_t;
-len = 0;
+int i = 0;
 
-for (size_t i = len; i > 0; i--)
-{
-putchar(s[i -1]);
-}
-putchar('\n');
+while (s[i])
+i++;
+i--;
+while (i >= 0)
+_putchar(s[i--]);
+_putchar('\n');
 }
