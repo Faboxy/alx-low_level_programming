@@ -1,4 +1,10 @@
 #include "main.h"
+/**
+ *  sqrt_check - checks whetther a number has a natural sqrt
+ *  @g: number
+ *  @c: number
+ *  Return: checked
+ */
 
 int sqrt_check(int g, int c)
 {
