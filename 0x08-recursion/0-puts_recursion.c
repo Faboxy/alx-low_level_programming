@@ -6,8 +6,13 @@
  */
 void _puts_recursion(char *s)
 {
-	_putchar(s);
+	if (*s)
+	{
+		_Putchar(*s);
+		_puts_recursion(s + 1);
+	}
+	else
+		_putchar('\n');
 
-	return (s);
 }
 
