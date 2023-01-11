@@ -2,9 +2,9 @@
 #include <stdlib.h>
 /**
  * str_concat - a function that concatenates two strings
- * @si: first string
+ * @s1: first string
  * @s2: second string
- * REturn: a pointer to a newly allocated memory or NULL
+ * Return: a pointer to a newly allocated memory or NULL
  */
 char *str_concat(char *s1, char *s2)
 {
@@ -15,13 +15,13 @@ char *str_concat(char *s1, char *s2)
 		i = 0;
 	else
 	{
-		for (i = 0; s[i]; i++)
+	for (i = 0; s[i]; i++)
 	}
 	if (s2 == NULL)
 		j = 0;
 	else
 	{
-		for (j = 0; s2[j]; j++)
+	for (j = 0; s2[j]; j++)
 	}
 	k = i + j + 1;
 	s = malloc(k * sizeof(char));
