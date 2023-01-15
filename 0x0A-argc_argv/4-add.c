@@ -1,5 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <ctype.h>
+#include <string.h>
 /**
  * main - a program that adds positive numbers
  * if no number is passed to the program, print 0 followed by a new line
@@ -9,9 +11,9 @@
  * @argv: argument vector
  * Return: return 0
  */
-int main(argc, char *argv[])
+int main(int argc, char *argv[])
 {
-	int sum = o, i;
+	int sum = 0, i;
 
 	if (argc > 1)
 	{
@@ -20,7 +22,7 @@ int main(argc, char *argv[])
 			int b;
 			char *str;
 
-			str = argc[i];
+			str = argv[i];
 			for (b = 0; str[b] != 'o'; ++b)
 			{
 				if (str[b] < 48 || str[b] > 57)
@@ -31,7 +33,7 @@ int main(argc, char *argv[])
 			}
 		}
 	}
-	for (i = 1; i < argc; ++1)
+	for (i = 1; i < argc; ++i)
 	{
 		sum += atoi(argv[i]);
 	}
