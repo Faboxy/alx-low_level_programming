@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 /**
  * main - a program that adds positive numbers
  * if no number is passed to the program, print 0 followed by a new line
