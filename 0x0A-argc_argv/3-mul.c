@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <string.h>
+#include <stdlib.h>
 /**
  * main - program that multiplies two numbers
  * assume the result can be stored in an integer
