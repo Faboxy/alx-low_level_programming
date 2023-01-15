@@ -6,7 +6,7 @@
  * if the program does not receive two arguments it should print an error
  * @argc: the argument count
  * @argv: the argument vector
- * Retyurn: return an erroe if the program does not receive two arguments
+ * Return: return an erroe if the program does not receive two arguments
  */
 int main(int argc, char *argv[])
 {
