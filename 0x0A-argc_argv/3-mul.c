@@ -20,7 +20,7 @@ int main(int argc, char *argv[])
 	}
 	for (index = 1; index < argc; index++)
 	{
-		multiplication = multiplication * (argv[index]);
+		multiplication = multiplication * atoi(argv[index]);
 	}
 	printf("%d\n", multiplication);
 	return (0);
