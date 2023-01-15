@@ -33,8 +33,8 @@ int main(int args, char *argv[])
 
 		else if (c >= 5)
 			c -= 5;
-		else if (c >= 3)
-			c -= 3;
+		else if (c >= 2)
+			c -= 2;
 		else if (c >= 1)
 		c -= 1;
 		else
