@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <string.h>
 /**
  * main - program that multiplies two numbers
  * assume the result can be stored in an integer
@@ -8,7 +9,7 @@
  */
 int main(int argc, char *argv[])
 {
-	int index, multiplication, atoi;
+	int index, multiplication;
 
 	multiplication = 1;
 	if (argc < 3)
