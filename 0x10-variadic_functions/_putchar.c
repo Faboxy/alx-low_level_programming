@@ -1,4 +1,6 @@
 #include <unistd.h>
+#include "variadic_functions.h"
+#include <stdio.h>
 /**
  * _putchar - prints a charcter
  * @c: the charcter to be printed
