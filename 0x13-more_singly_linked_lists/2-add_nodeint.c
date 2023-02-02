@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <stddef.h>
 #include "lists.h"
 /**
  * add_nodeint - adds a new number at the end of a listint_t list
