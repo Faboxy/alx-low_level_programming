@@ -6,7 +6,7 @@
  * @index: index pof the node starting at 0
  * @head: a pointer to the head of the listint_t list
  * Return: if the node does not exist - NULL
- * 	otherwise - the located node
+ * otherwise - the located node
  */
 listint_t *get_nodeint_at_index(listint_t *head, unsigned int index)
 {
