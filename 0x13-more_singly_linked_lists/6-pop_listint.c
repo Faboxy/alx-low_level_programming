@@ -3,10 +3,10 @@
 #include "lists.h"
 /**
  * pop_listint - deletes the headnode of a litint_t linked list
- * and returns the haed node's data n
+ * 		and returns the haed node's data n
  * @head: a pointer to the address of the head of the listint_t list
  * Return: 0 if the linked list is empty
- * otherwise the head node's data (n).
+ * 		otherwise the head node's data (n).
  */
 int pop_listint(listint_t **head)
 {
