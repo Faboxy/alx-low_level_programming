@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 /**
  * binar_to_vint - converts a binary number to unsigned int
  * @b: string containing the binary number
