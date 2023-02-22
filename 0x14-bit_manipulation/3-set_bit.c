@@ -5,14 +5,16 @@
  * @n: a pointer to the bit
  * @index: the index to set the value at - indices start at 0
  * Return: if an error return -1 otherwise 1
- */
-int get_bit(unsigned long int n, unsigned int index)
+ **/
+int set_bit(unsigned long int *n, unsigned int index)
 {
-	if (index >= (sizeof(unsigned long int) * 8))
+	unsigned int m;
+
+	if (index > 63)
 		return (-1);
 
-	if ((n & (1 << index)) == 0)
-		return (0);
+	m = 1 << index;
+	*n = (*n | m);
 
 	return (1);
 }
